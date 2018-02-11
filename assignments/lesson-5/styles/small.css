@@ -1,0 +1,196 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    
+}
+header h1 {
+    position: absolute;
+    top: .7em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'PT Sans', sans-serif; 
+    font-size: 5em;
+}
+header img {
+    position: absolute;
+    top: 0;
+}
+#site-banner {
+    position: absolute;
+    width: 100%;
+    height: 165em;
+}
+#site-logo {
+}
+header .subheading {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    top: 6em;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+
+nav {}
+nav button {}
+nav ul {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkgray;
+    top: 250px;
+    width: 100%;
+}
+nav ul li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+nav ul li:last-child {
+    border-right: none;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color: #333;
+}
+nav ul li a:hover {
+    background-color: darkorange;
+}
+
+main {
+    display: block;
+    color: darkgray;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 300px;
+    width: 100%;
+}
+main h2 {
+    text-align: center;
+    width: 500px;
+    height: auto;
+    border: 1px solid gray;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font: 'PT Sans', sans-serif;
+    font-size: 50px;
+    color: rebeccapurple;
+    
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { 
+    width: 100%;
+    float: left;
+}
+
+section div {
+    display: block;
+    color: darkgray;
+    border: 1px solid gray;
+    width: 40%;
+    margin-left: 5%;
+    float: left;
+    height: 6em;
+}
+
+.current {
+    display: block;
+    color: darkgray;
+    border: 1px solid gray;
+    width: 40%;
+    height: 12em;
+    float: right;
+    margin-right: 5%;
+}
+
+section h3 {
+    font-size: 1.5em;
+    color: rebeccapurple;
+    margin-left: 2em;
+}
+
+div picture img {
+    float: right;
+    width: 20em;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.forecast{
+    border: 1px solid gray;
+    margin-top: 15em;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+table,th,td {
+    border: 1px solid black;
+}
+th,td {
+    padding: 15px;
+    text-align: left;
+}
+article {
+    display: block;
+    margin-left: 3em;
+    margin-right: 50px;
+    margin-top: 2em;
+    height: 20em;
+    border: 1px solid gray;
+}
+article h3 {
+    font-size: 1.5em;
+    color: rebeccapurple;
+}
+img {
+    float: right;
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 60em; /* fill the page in the small/phone view */
+  margin: 10px;
+  float: right;
+}
+.clearfix { 
+  overflow: auto;
+}
+
+footer {
+    position: absolute;
+    display: block;
+    background-color: darkgray;
+    height: 5em;
+    width: 100%;
+    bottom: 0;
+    top: 1500px;
+}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
