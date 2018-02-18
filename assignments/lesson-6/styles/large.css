@@ -1,8 +1,30 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    
+ nav button { display:none; }  /* hamburger button does not need to be shown */
+    
+    nav ul.hide {display: block;}
+    
+    nav ul {
+        margin-left: 2%;
+    }
+ 
+    nav ul li {
+        float: left;
+  }
+  
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .6rem 1rem;
+    }
   
   article p.town-article img { width: 29.333%; }
   
+  main section.forecast {
+    display: block;
+}
+    
   table {
     margin-left: auto;
     margin-right: auto;
@@ -13,14 +35,6 @@
   th,td {
     padding: 15px;
     text-align: left;
-  }
-  article {
-    display: block;
-    margin-left: 3em;
-    margin-right: 50px;
-    margin-top: 2em;
-    height: 20em;
-    border: 1px solid gray;
   }
     
 }

@@ -13,21 +13,25 @@
   <link href="styles/small.css" rel="stylesheet">    <!-- default styles - small/phone views -->
   <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
   <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 </head>
-<body onLoad="renderDate();">
-
-  <header>
-    <img src="images/clouds-2.jpg" alt="site-banner" style="width:100%;">
-    <img src="images/dummy-logo.pdf" alt="site-logo" style="width:10%;">
-    <h1>Tri-City Weather</h1>
-    <div class="subheading">So your plans don't have to take a rain-check</div>
+<body>
+  <header class="clearfix">
+      <!--
+      <figure class="bannerpic">
+         <img src="images/banner-clouds-6.jpg">  
+      </figure> -->
+      <h1>Tri-City Weather</h1>
+      <h2>So your plans don't have to take a rain-check</h2>
+      <figure class="sitelogo">
+            <img src="images/weblogo-assets/weblogo-2.png" alt="logo" srcset="images/weblogo-assets/weblogo-1.png 1x, images/weblogo-assets/weblogo-2.png 2x, images/weblogo-assets/weblogo-3.png 3x">
+      </figure>
   </header>
 
   <!-- site navigation use placeholder references -->
-  <nav>
-    <button onclick="toggleNavMenu()">&#9776;</button>
-    <ul>
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
     	<li><a href="#">Home</a></li>
     	<li class="active"><a href="#">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
@@ -37,26 +41,26 @@
     </ul>		
   </nav>
     
-  <main>
-    <h2>The City of Franklin</h2>
-    <figure>
+  <main class="clearfix">
+    <h2 class="clearfix">The City of Franklin</h2>
+    <figure class="franklinpic">
+        <img src="images/franklin-original.jpg" alt="franklin" sizes="50vw" 
+             srcset="images/franklin-original-small.jpg 200w, 
+                     images/franklin-original-medium.jpg 500w,
+                     images/franklin-original-large.jpg 800w">  
+        
     </figure>
-    <section>
+    <section class="weathersummary">
       <h3>Weather Summary</h3>    
       <div class="highlow">
         <p>High: 73</p>  
         <p>Low:68</p>  
-      </div>
-      <div class="current">
-        Sunny
-        <picture>
-            <img src="images/sunnyday.jpg" alt="Sunny-day-pic" style="width:70%;">
-        </picture>
-      </div>   
-      <div class="conditions">
         <p>Precipitation: 40%</p>  
-        <p>Wind Speed: 15mph</p>  
-      </div>           
+        <p>Wind Speed: 15mph</p> 
+        <!--<figure class="forecastpic">
+            <img src="images/sunnyday.jpg">
+        </figure> -->
+      </div>
     </section>
         
     <section class="forecast" media="(min-width: 37.5em)">
@@ -93,17 +97,22 @@
       </table>
     </section>
       
-    <article>
-      <h3>Franklin Breaks Record</h3>	
+    <article class="clearfix">
+      <h3>Franklin Breaks Record</h3>
+      <figure class="articlephoto">
+          <img src="images/franklinpic.jpeg" alt="article-pic">
+          <figcaption>The City of Franklin</figcaption>
+      </figure>
       <p class="town-article">
-        <img src="images/franklinpic.jpeg" alt="article-pic" style="width:50%;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Leo vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Ipsum consequat nisl vel pretium lectus quam id leo. Proin sed libero enim sed faucibus turpis in. Nunc sed id semper risus. Nec ultrices dui sapien eget mi proin sed. Nulla pharetra diam sit amet nisl suscipit adipiscing. Vitae congue eu consequat ac felis donec et. Sit amet nulla facilisi morbi tempus. Sed adipiscing diam donec adipiscing tristique risus nec. Ullamcorper a lacus vestibulum sed arcu non odio. Tristique magna sit amet purus gravida quis blandit. At auctor urna nunc id. Tempor orci eu lobortis elementum nibh tellus molestie nunc. Sit amet porttitor eget dolor morbi non arcu risus quis.
+        <br>
+        Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. At auctor urna nunc id cursus metus aliquam eleifend mi. Rhoncus dolor purus non enim praesent. Ultrices neque ornare aenean euismod elementum nisi quis. Tincidunt nunc pulvinar sapien et. Tincidunt dui ut ornare lectus sit amet est. Feugiat sed lectus vestibulum mattis ullamcorper velit. Varius quam quisque id diam vel quam. Sit amet tellus cras adipiscing enim eu. Ultrices sagittis orci a scelerisque purus.
       </p>
-		</article>		  
+    </article>		  
   
   </main>
     
-  <footer>
+  <footer class="clearfix">
     <aside>
       123 Sunny Drive, Franklin, MN 60378 | 222-555-1287
     </aside>
