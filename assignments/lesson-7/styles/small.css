@@ -181,8 +181,16 @@ footer>p {} /* This structure refers to p elements that are direct children of t
 main section.picturegrid {
     display: grid;
     grid-template-columns: 1fr;
+    border: 1px solid black;
+    margin: 0 2% 0 2%;
+}
+
+div figure.gallerypic {
+    margin: 1% 0 1% 0;
+    width: 100%;
+    border: 1px red dashed;
 }
 
 div figure.gallerypic img {
-    
+    width: 100%:
 }
