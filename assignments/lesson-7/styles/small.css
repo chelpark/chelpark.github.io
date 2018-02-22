@@ -1,0 +1,188 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { 
+}
+
+header {
+    background-color: #ddd;
+}
+
+header figure.sitelogo {
+    margin: 0,0,0,2%;
+    float: left;
+    width: 20%;
+}
+
+header h1 {
+    color: #4c0080;
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    margin: 5%,0,0,0;
+}
+
+header h2 {
+    color: #4c0080;
+    font-size: 1em;
+    text-align: center;
+}
+
+nav {
+    background-color: #a9a9a9;
+    font-family: Verdana, sans-serif;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fcfcfc;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center space-between;
+    align-items: stretch;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #a9a9a9;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main {
+    display: block;
+    color: #a9a9a9;
+    margin: 2% 0 0 0;
+    padding: 0;
+    width: 100%;
+}
+main h2 {
+    text-align: center;
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    color: #4c0080;
+    
+}
+
+main figure.franklinpic {
+    width: 80%;
+    margin: 0,0,0,2%;
+}
+
+main figure.franklinpic img {
+    width: 80%;
+}
+
+main section.weathersummary {
+    display: block;
+    color: #a9a9a9;
+    border: 1px solid black;
+    width: 100%;
+    margin-left: 2%;
+}
+
+
+section h3 {
+    font-size: 1.5em;
+    color: #4c0080;
+    margin-left: 2%;
+}
+
+main section.forecast {
+    display: none;
+}
+
+div figure.forecastpic {
+    width: 50%;
+    float: left;
+    margin: 0;
+}
+
+div figure.forecastpic img {
+    width: 50%;
+}
+
+article {
+    display: block;
+    margin: 5% 5% 5% 5%;
+}
+article h3 {
+    font-size: 1.5rem;
+    color: #4c0080;
+}
+
+article figure.articlephoto {
+    width: 50%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+article figure.articlephoto img {
+    width:100%;
+}
+
+article figure.articlephoto figcaption {
+    text-align: center;
+    font-size:.75rem;
+}
+
+footer {
+    position: absolute;
+    display: block;
+    background-color: #a9a9a9;
+    height: 5em;
+    width: 100%;
+    bottom: 0;
+    top: 1800px;
+}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Other Class Selectors */
+
+/* Gallery Page */
+
+main section.picturegrid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+div figure.gallerypic img {
+    
+}

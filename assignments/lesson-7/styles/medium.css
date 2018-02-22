@@ -1,0 +1,21 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+  
+  section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
+  
+  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+
+  table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  table,th,td {
+    border: 1px solid black;
+  }
+  th,td {
+    padding: 15px;
+    text-align: left;
+  }
+    
+}
