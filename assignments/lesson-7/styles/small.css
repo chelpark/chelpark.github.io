@@ -205,7 +205,6 @@ main section.picturegrid {
     grid-template-columns: 1fr;
     border: 1px solid black;
     margin: 2%
-    grid-gap: 1em;
 }
 
 div figure.gallerypic {
