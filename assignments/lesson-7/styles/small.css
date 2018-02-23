@@ -26,7 +26,7 @@ header h1 {
     font-size: 4em;
     text-align: center;
     font-family: 'Anton', sans-serif;
-    margin: 5%,0,0,0;
+    margin: 0;
 }
 
 header h2 {
@@ -183,10 +183,11 @@ main section.picturegrid {
     grid-template-columns: 1fr;
     border: 1px solid black;
     margin: 0 2% 0 2%;
+    grid-gap: 1em;
 }
 
 div figure.gallerypic {
-    margin: 1% 0 1% 0;
+    margin: 0;
     width: 100%;
     border: 1px red dashed;
 }
