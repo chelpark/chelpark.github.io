@@ -1,17 +1,14 @@
 //Gets numbers from user input
 function findWindchill() {
-    var tempF = parseFloat(document.getElementById("temperature").value);
-    var speed = parseFloat(document.getElementById("windSpeed").value);
-    var windChillTemp = windChill(tempF, speed);
-    
+    var highTemp = 73;
+    var lowTemp= 68;
+    var windSpeed= 15;
+    var tempF = (highTemp + lowTemp) / 2;
+
+    var windChillEquation = Math.floor(35.74 + 0.6215 * tempF - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * tempF * Math.pow(windSpeed, 0.16));
     
     //Display the answer
-    document.getElementById("outputDiv").innerHTML = windChillTemp;
+   var displayWindchill =  document.getElementById("displayWindchill");
+    displayWindchill.innerHTML = "Windchill:" + windChillEquation + "mph";
 }
-
-//Equates windchill and returns result  
-function windChill (f, s) {
-    var windChillEquation = 35.74 + 0.6215 * f - 35.75 * Math.pow(s, 0.16) + 0.4275 * f * Math.pow(s, 0.16);
-    return windChillEquation;
-    
-}
+findWindchill();

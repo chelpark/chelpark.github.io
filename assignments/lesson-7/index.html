@@ -59,7 +59,10 @@
         <div>High: 73</div>  
         <div>Low:68</div>  
         <div>Precipitation: 40%</div>  
-        <div>Wind Speed: 15mph</div> 
+        <div>Wind Speed: 15mph</div>
+        <div id="displayWindchill">
+          <script type="text/javascript" src="scripts/windchill.js">document.getElementById("displayWindchill").innerHTML = findWindchill();</script>
+        </div>
         <div class="currentstatus">
             <h4> Sunny </h4>  
             <figure class="forecastpic">
@@ -67,7 +70,7 @@
             </figure>
         </div>
       </div>
-      <script type="text/javascript" src="scripts/windchill.js">document.getElementById("windChillTemp").innerHTML = findWindchill();</script>
+      
     </section>
         
     <section class="forecast" media="(min-width: 37.5em)">
