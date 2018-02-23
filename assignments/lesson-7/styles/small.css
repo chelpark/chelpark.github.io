@@ -124,14 +124,13 @@ main figure.franklinpic img {
 main section.weathersummary {
     display: block;
     color: #a9a9a9;
-    border: 1px red dashed;
     width: 100%;
     margin-left: 2%;
     text-align: center;
 }
 
 .highlow {
-    border: 1px solid red;
+    border: 1px red dashed;
 }
 
 div figure.forecastpic {
