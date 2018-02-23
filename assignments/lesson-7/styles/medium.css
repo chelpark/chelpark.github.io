@@ -2,10 +2,10 @@
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
   
   
-  section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
-  
-  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
-
+  main section.forecast {
+    display: block;
+}
+    
   table {
     margin-left: auto;
     margin-right: auto;
@@ -17,5 +17,14 @@
     padding: 15px;
     text-align: left;
   }
+    
+  
+  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+    
+/* gallery page grid */    
+    
+  main section.picturegrid {
+    grid-template-columns: 1fr 1fr;
+}    
     
 }

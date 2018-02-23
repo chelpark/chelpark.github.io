@@ -24,7 +24,7 @@ header {
     height: auto;
     align-self: center;
     margin: 0;
-    background-color: #ddd;
+    background: linear-gradient(#ddd, #2E86C1);
     border: 1px red dashed;
 }
 
@@ -201,9 +201,10 @@ footer p {
 
 main section.picturegrid {
     display: grid;
+    width: 100%;
     grid-template-columns: 1fr;
     border: 1px solid black;
-    margin: 0 2% 0 2%;
+    margin: 2%
     grid-gap: 1em;
 }
 

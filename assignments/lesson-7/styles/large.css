@@ -24,20 +24,10 @@
   
   article p.town-article img { width: 29.333%; }
   
-  main section.forecast {
-    display: block;
-}
+/* gallery page grid */    
     
-  table {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  table,th,td {
-    border: 1px solid black;
-  }
-  th,td {
-    padding: 15px;
-    text-align: left;
-  }
+  main section.picturegrid {
+    grid-template-columns: 1fr 1fr 1fr;
+}    
     
 }
