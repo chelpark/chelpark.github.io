@@ -15,16 +15,20 @@
   <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 </head>
 <body>
+    
   <header class="clearfix">
-      <!--
-      <figure class="bannerpic">
+      <!--<figure class="bannerpic">
          <img src="images/banner-clouds-6.jpg">  
-      </figure> -->
-      <h1>Tri-City Weather</h1>
-      <h2>So your plans don't have to take a rain-check</h2>
-      <figure class="sitelogo">
-            <img src="images/weblogo-assets/weblogo-2.png" alt="logo" srcset="images/weblogo-assets/weblogo-1.png 1x, images/weblogo-assets/weblogo-2.png 2x, images/weblogo-assets/weblogo-3.png 3x">
-      </figure>
+      </figure>-->
+      <section class="headerbox">
+            <figure class="sitelogo">
+                <img src="images/logo.png" alt="logo">
+            </figure>
+          
+            <h1>Tri-City Weather</h1>
+            <h2>So you don't have to take a rain-check</h2> 
+      </section>
+      
   </header>
 
   <!-- site navigation use placeholder references -->
@@ -56,11 +60,12 @@
         <div>Low:68</div>  
         <div>Precipitation: 40%</div>  
         <div>Wind Speed: 15mph</div> 
-        <!--<div>
-          <figure class="forecastpic">
-            <img src="images/sunnyday.jpg">
-          </figure>
-        </div>-->
+        <div class="currentstatus">
+            <h4> Sunny </h4>  
+            <figure class="forecastpic">
+                <img src="images/sunnyday.jpg">
+            </figure>
+        </div>
       </div>
       <script type="text/javascript" src="scripts/windchill.js">document.getElementById("windChillTemp").innerHTML = findWindchill();</script>
     </section>
