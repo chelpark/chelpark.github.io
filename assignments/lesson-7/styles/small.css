@@ -205,7 +205,8 @@ main section.picturegrid {
     width: 100%;
     grid-template-columns: 1fr;
     border: 1px solid black;
-    margin: 2%
+    margin: 2%;
+    grid-gap: 1em;
 }
 
 div figure.gallerypic {
@@ -215,5 +216,11 @@ div figure.gallerypic {
 }
 
 div figure.gallerypic img {
-    width: 100%:
+    max-width: 408px;
+}
+
+div figure.gallerypic figcaption {
+    text-align: center;
+    font-size:.75em;
+    max-width: 408px;
 }
