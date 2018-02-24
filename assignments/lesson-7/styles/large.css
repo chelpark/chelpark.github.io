@@ -29,13 +29,17 @@
         border-right: 1px solid rgba(0,0,0,0.3);
         padding: .6rem 1rem;
     }
-  
-  article p.town-article img { width: 29.333%; }
-  
-/* gallery page grid */    
     
-  main section.picturegrid {
+    div figure.gallerypic:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+    }
+  
+    article p.town-article img { width: 29.333%; }
+  
+    /* gallery page grid */    
+    
+    main section.picturegrid {
     grid-template-columns: 1fr 1fr 1fr;
-}    
+    }    
     
 }
