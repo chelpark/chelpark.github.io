@@ -20,11 +20,11 @@ header, nav, main, footer {
 }
 
 header {
-    width: 100%;
-    height: auto;
-    align-self: center;
-    margin: 0;
-    background: linear-gradient(#ddd, #2E86C1);
+    background-image: url(banner-clouds-large.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
     border: 1px red dashed;
 }
 
@@ -47,19 +47,22 @@ section figure.sitelogo img {
 }
 
 header h1 {
-    color: #4c0080;
+    text-align: center;
+    color: whitesmoke;
     font-size: 4em;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Bree Serif', serif;
     margin: 0;
 }
 
 header h2 {
-    color: #4c0080;
-    font-size: 1em;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.5em;
 }
 
 nav {
-    background-color: #2E86C1;
+    background-color: #3A5F69;
     font-family: Verdana, sans-serif;
 }
 nav button {
@@ -77,7 +80,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #2E86C1;
+    background-color: #3A5F69;
 }
 
 nav ul li a {
@@ -100,20 +103,17 @@ nav ul.hide {
 }
 
 main {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+    margin: 2%;
 }
 main h2 {
     text-align: center;
     font-size: 2.5em;
-    color: #4c0080;
+    color: #3A5F69;
 }
 
 main figure.franklinpic {
     width: 100%;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: 0;
 }
 
 main figure.franklinpic img {
@@ -126,7 +126,6 @@ main section.weathersummary {
     display: block;
     color: #a9a9a9;
     width: 100%;
-    margin-left: 2%;
     text-align: center;
 }
 
@@ -146,7 +145,7 @@ div figure.forecastpic {
 
 section h3 {
     font-size: 1.5em;
-    color: #4c0080;
+    color: #3A5F69;
     margin-left: 2%;
 }
 
@@ -160,7 +159,7 @@ article {
 }
 article h3 {
     font-size: 1.5rem;
-    color: #4c0080;
+    color: #3A5F69;
 }
 
 article figure.articlephoto {
@@ -178,7 +177,7 @@ article figure.articlephoto figcaption {
 }
 
 footer {
-    background-color: #2E86C1;
+    background-color: #3A5F69;
     color: white;
     font-size: .9rem;
     margin: 0;
@@ -205,7 +204,6 @@ main section.picturegrid {
     width: 100%;
     grid-template-columns: 1fr;
     border: 1px solid black;
-    margin: 2%;
     grid-gap: 1em;
 }
 
@@ -216,11 +214,10 @@ div figure.gallerypic {
 }
 
 div figure.gallerypic img {
-    max-width: 408px;
+    width: 100%;
 }
 
 div figure.gallerypic figcaption {
     text-align: center;
     font-size:.75em;
-    max-width: 408px;
 }
