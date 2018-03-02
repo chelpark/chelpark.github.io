@@ -16,9 +16,6 @@
 <body>
     
   <header class="clearfix">
-      <!--<figure class="bannerpic">
-         <img src="images/banner-clouds-6.jpg">  
-      </figure>-->
       <section class="headerbox">
             <figure class="sitelogo">
                 <img src="images/logo.png" alt="logo">
@@ -58,14 +55,14 @@
               
             <label><span>Phone:</span><input name="phone" type="tel" placeholder="1234567890" pattern="[0-9]{10-20}" required></label>
               
-            <label><span>Zip Code:</span><input name="zipcode" type="number" placeholder="zipcode" pattern="[0-9]{4-5}" required></label>
+            <label><span>Zip Code:</span><input name="zipcode" type="number" placeholder="zipcode" pattern="[0-9]{5}" required></label>
           
         </fieldset>
           
         <fieldset>
             <legend><span>Storm Information</span></legend>
           
-            <label><span>Storm Date:</span><input name="date" type="date"></label>
+            <label><span>Storm Date:</span><input name="date" placeholder="MM/DD/YYYY" type="date"></label>
             
             <label>
                 <span>Storm Type:</span>
@@ -114,9 +111,8 @@
             
         </fieldset>
           
-        <input type="submit" value="Submit Form" class="submitBtn" onclick="window.location.href=' href=thanks.html'">
-        <input type="hidden" value="Storm Incedent Report" name="subject">
-        <input name="redirect" type="hidden" value="thanks.html">
+        <input type="button" value="Submit" class="submitBtn" onclick="window.location.href='thanks.html'";>
+
       
       </form>
       

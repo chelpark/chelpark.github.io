@@ -45,4 +45,10 @@
     grid-template-columns: 1fr 1fr;
 }    
     
+/*storm center page*/
+    
+    input.submitBtn {
+        width: 75%;
+    }
+    
 }
