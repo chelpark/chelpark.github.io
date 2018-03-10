@@ -1,0 +1,51 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+ 
+    section figure.sitelogo {
+    display: block;
+    border: 1px solid red;
+    float: left;
+    margin: 2%;
+    width: 10%;
+    } 
+    
+    nav button { display:none; }  /* hamburger button does not need to be shown */
+    
+    nav ul.hide {
+        display: inline-flex;
+        flex-direction: row;
+    }
+    
+    nav ul {
+        margin-left: 2%;
+    }
+ 
+    nav ul li {
+        
+  }
+  
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .6rem 1rem;
+    }
+    
+    div figure.gallerypic:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+    }
+  
+    article p.town-article img { width: 29.333%; }
+  
+    /* gallery page grid */    
+    
+    main section.picturegrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    }    
+    
+    /*storm center page*/
+    
+    input.submitBtn {
+        width: 50%;
+    }
+    
+}
