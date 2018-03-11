@@ -281,3 +281,35 @@ input.submitBtn {
 input.submitBtn:hover {
     background-image: linear-gradient(to bottom, #ff1a1a, #990000);
 }
+
+/* styling for homepage */
+
+div.weatherstoryinfo {
+    border: 1px solid black;
+    margin: 2% 0 2% 0;
+}
+
+div figure.weatherstorypic {
+    margin: 0;
+    width: 100%;
+    border: 1px red dashed;
+}
+
+div figure.weatherstorypic img {
+    width: 100%;
+}
+
+div.franklininfo {
+    border: 1px solid black;
+    margin: 2% 0 2% 0;
+}
+
+div.greenvilleinfo {
+    border: 1px solid black;
+    margin: 2% 0 2% 0;
+}
+
+div.springfieldinfo {
+    border: 1px solid black;
+    margin: 2% 0 2% 0;
+}
