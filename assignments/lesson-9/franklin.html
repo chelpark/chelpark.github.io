@@ -51,9 +51,14 @@
         
     </figure>
     <section class="weathersummary">
-      <h3>Weather Summary</h3>    
+      <!-- <h2>Weather Conditions for <span id = "place">City, State</span></h2>
+        
+        <p>Current Temperature is <span id = "currentTemp">120</span>&deg;</p>
+        
+        <img src"images/placeholder.png" alt="current weather" id="weather_icon"> -->
+      <h3>Weather Conditions</h3>    
       <div class="highlow">
-        <div>High: 73</div>  
+        <span id = "conditions">Sunny</div>  
         <div>Low:68</div>  
         <div>Precipitation: 40%</div>  
         <div>Wind Speed: 15mph</div>
@@ -130,6 +135,7 @@
   </footer>
   
   <script src="scripts/hamburger.js"></script>
+  <script src="js/wu-weather.js"></script>
   <script> 
     
     var section = document.querySelector('section');
@@ -152,18 +158,20 @@
               var myPara2 = document.createElement('p');
               var myPara3 = document.createElement('p');
               var myPara4 = document.createElement('p');
+              var myList = document.createElement('ul');
               
               myH2.textContent = towns[0].name;
               myPara1.textContent = towns[0].motto;
-              myPara2.textContent = "Founded: " + cities[0].yearFounded;
-              myPara3.textContent = "Population: " + cities[0].currentPopulation;
-              myPara4.textContent = "Average Rainfall: " + cities[0].averageRainfall;
+              myPara2.textContent = "Founded: " + towns[0].yearFounded;
+              myPara3.textContent = "Population: " + towns[0].currentPopulation;
+              myPara4.textContent = "Average Rainfall: " + towns[0].averageRainfall;
               
               myArticle.appendChild(myH2);
               myArticle.appendChild(myPara1);
               myArticle.appendChild(myPara2);
               myArticle.appendChild(myPara3);
               myArticle.appendChild(myPara4);
+              
               
               section.appendChild(myArticle);
               

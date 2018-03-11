@@ -23,9 +23,9 @@ var section = document.querySelector('section');
               
               myH2.textContent = towns[i].name;
               myPara1.textContent = towns[i].motto;
-              myPara2.textContent = "Founded: " + cities[i].yearFounded;
-              myPara3.textContent = "Population: " + cities[i].currentPopulation;
-              myPara4.textContent = "Average Rainfall: " + cities[i].averageRainfall;
+              myPara2.textContent = "Founded: " + towns[i].yearFounded;
+              myPara3.textContent = "Population: " + towns[i].currentPopulation;
+              myPara4.textContent = "Average Rainfall: " + towns[i].averageRainfall;
               
               myArticle.appendChild(myH2);
               myArticle.appendChild(myPara1);
