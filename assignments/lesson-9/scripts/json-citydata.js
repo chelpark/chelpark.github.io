@@ -1,4 +1,4 @@
-var section = document.querySelector('section class="weatherstories"');
+var span = document.querySelector('span');
       var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
       var request = new XMLHttpRequest();
       request.open('GET', requestURL);
@@ -33,7 +33,7 @@ var section = document.querySelector('section class="weatherstories"');
               myArticle.appendChild(myPara3);
               myArticle.appendChild(myPara4);
               
-              section.appendChild(myArticle);
+              span.appendChild(myArticle);
               
           } 
       }
