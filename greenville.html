@@ -33,8 +33,8 @@
     <button onclick="toggleMenu()">&#9776;</button>
     <ul id="primaryNav" class="hide">
     	<li><a href="index.html">Home</a></li>
-    	<li class="active"><a href="franklin.html">Franklin</a></li>
-    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
+    	<li class="active"><a href="greenville.html">Greenville</a></li>
     	<li><a href="springfield.html">Springfield</a></li>
     	<li><a href="stormcenter.html">Storm Center</a></li>
     	<li><a href="gallery.html">Gallery</a></li>
@@ -42,7 +42,7 @@
   </nav>
     
   <main class="clearfix">
-    <h2 class="clearfix">The City of Franklin</h2>
+    <h2 class="clearfix">The City of Greenville</h2>
     <figure class="franklinpic">
         <img src="images/franklin-original.jpg" alt="franklin" sizes="50vw" 
              srcset="images/franklin-original-small.jpg 200w, 
@@ -153,11 +153,11 @@
               var myPara3 = document.createElement('p');
               var myPara4 = document.createElement('p');
               
-              myH2.textContent = towns[0].name;
-              myPara1.textContent = towns[0].motto;
-              myPara2.textContent = "Founded: " + cities[0].yearFounded;
-              myPara3.textContent = "Population: " + cities[0].currentPopulation;
-              myPara4.textContent = "Average Rainfall: " + cities[0].averageRainfall;
+              myH2.textContent = towns[1].name;
+              myPara1.textContent = towns[1].motto;
+              myPara2.textContent = "Founded: " + cities[1].yearFounded;
+              myPara3.textContent = "Population: " + cities[1].currentPopulation;
+              myPara4.textContent = "Average Rainfall: " + cities[1].averageRainfall;
               
               myArticle.appendChild(myH2);
               myArticle.appendChild(myPara1);

@@ -1,6 +1,4 @@
-var franklinInfo = document.querySelector('div class="franklininfo"');
-      var greenvilleInfo = document.querySelector('div class="greenvilleinfo"');
-      var springfieldInfo = document.querySelector('div class="springfieldinfo"');
+var section = document.querySelector('section');
       var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
       var request = new XMLHttpRequest();
       request.open('GET', requestURL);
@@ -11,7 +9,7 @@ var franklinInfo = document.querySelector('div class="franklininfo"');
           showData(cityData);
       }
       
-      function cityData(jsonObj) {
+      function showData(jsonObj) {
           var towns = jsonObj['towns'];
           
           for (var i = 0; i < towns.length; i++) {
@@ -21,6 +19,7 @@ var franklinInfo = document.querySelector('div class="franklininfo"');
               var myPara1 = document.createElement('p');
               var myPara2 = document.createElement('p');
               var myPara3 = document.createElement('p');
+              var myPara4 = document.createElement('p');
               
               myH2.textContent = towns[i].name;
               myPara1.textContent = towns[i].motto;
@@ -32,6 +31,7 @@ var franklinInfo = document.querySelector('div class="franklininfo"');
               myArticle.appendChild(myPara1);
               myArticle.appendChild(myPara2);
               myArticle.appendChild(myPara3);
+              myArticle.appendChild(myPara4);
               
               section.appendChild(myArticle);
               
