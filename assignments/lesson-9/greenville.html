@@ -50,23 +50,20 @@
                      images/franklin-original-large.jpg 800w">  
         
     </figure>
+
     <section class="weathersummary">
-      <h3>Weather Summary</h3>    
-      <div class="highlow">
-        <div>High: 73</div>  
-        <div>Low:68</div>  
-        <div>Precipitation: 40%</div>  
-        <div>Wind Speed: 15mph</div>
+        
+      <h3>Weather Conditions</h3>    
+      <div class="conditions">
+        <p><span id = "conditions">Sunny</span></p>
+        <p>Current Temperature is <span id = "currentTemp">120</span>&deg;</p>
+        <p>Wind Speed is <span id = "windspeed">120</span>mph</p>
+        <img src"images/sunnyday-small" alt="current weather" id="weather_icon">
+        <p> Current Conditions: <span id = "textForecast">Insert Here</span></p>
+      </div>
         <div id="displayWindchill">
           <script type="text/javascript" src="scripts/windchill.js">document.getElementById("displayWindchill").innerHTML = findWindchill();</script>
         </div>
-        <div class="currentstatus">
-            <h4> Sunny </h4>  
-            <figure class="forecastpic">
-                <img src="images/sunnyday.jpg">
-            </figure>
-        </div>
-      </div>
       
     </section>
         
@@ -130,6 +127,7 @@
   </footer>
   
   <script src="scripts/hamburger.js"></script>
+  <script src="scripts/wu-weather.js"></script>
   <script> 
     
     var section = document.querySelector('section');
