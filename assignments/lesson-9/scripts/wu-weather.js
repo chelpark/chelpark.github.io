@@ -8,15 +8,15 @@ weatherObject.onload = function() {
     var weatherInfo = JSON.parse(weatherObject.responseText);
     console.log(weatherInfo);
     
-    document.getElementById('conditions').innerHtml = weatherInfo.current_observation.weather;
+    document.getElementById('conditions').innerHTML = weatherInfo.current_observation.weather;
     
-    document.getElementById('currentTemp').innerHtml = weatherInfo.current_observation.temp_f;
+    document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.temp_f;
     
-    document.getElementById('weather_icon').innerHtml = weatherInfo.current_observation.icon_url;
+    document.getElementById('weather_icon').innerHTML = weatherInfo.current_observation.icon_url;
     
-    document.getElementById('windspeed').innerHtml = weatherInfo.current_observation.wind_mph;
+    document.getElementById('windspeed').innerHTML = weatherInfo.current_observation.wind_mph;
     
-    document.getElementById('textForecast').innerHtml = weatherInfo.current_observation.txt_forecast: forecastday.fctext;
+    document.getElementById('textForecast').innerHTML = weatherInfo.current_observation.txt_forecast: forecastday.fctext;
     
     
 } //end of onload
