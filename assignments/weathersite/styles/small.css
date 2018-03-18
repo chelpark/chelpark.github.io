@@ -122,15 +122,19 @@ main figure.franklinpic img {
     margin: 0;
 }
 
-main section.weathersummary {
-    display: block;
-    color: #a9a9a9;
-    width: 100%;
-    text-align: center;
-    background-color: #ffffff;
+div.cityInfo {
     border: 1px solid grey;
+    width: 100%;
+    background-color: #ffffff;
     margin-top: 2%;
-    padding: 2%;
+}
+
+section.weathersummary {
+    border: 1px solid grey;
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 2%;
+    padding: 3%;
 }
 
 .weathersummary figure {

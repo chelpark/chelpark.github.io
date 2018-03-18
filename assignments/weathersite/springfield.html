@@ -50,6 +50,23 @@
                      images/franklin-original-large.jpg 800w">  
         
     </figure>
+      
+    <div class="cityInfo">
+        <article>
+            <p>
+            Motto: <span class="jsonCityInfo" id="sMotto"></span>
+            </p>
+            <p>
+            Year Founded: <span class="jsonCityInfo" id="sFounded"></span>
+            </p>
+            <p>
+            Population: <span class="jsonCityInfo" id="sPop"></span>
+            </p>
+            <p>
+            Annual Rainfall: <span class="jsonCityInfo" id="sRainfall"></span>
+            </p>
+        </article>
+    </div>
 
     <section class="weathersummary">
         
@@ -128,47 +145,9 @@
     </p>
   </footer>
   
-  <script src="scripts/hamburger.js"></script>
-  <script src="scripts/wu-weather-springfield.js"></script>
-  <script> 
-    
-    var section = document.querySelector('section');
-      var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-      var request = new XMLHttpRequest();
-      request.open('GET', requestURL);
-      request.responseType = 'json';
-      request.send();
-      request.onload = function() {
-          var cityData = request.response;
-          showData(cityData);
-      }
-      
-      function showData(jsonObj) {
-          var towns = jsonObj['towns'];
-          
-              var myArticle = document.createElement('article');
-              var myH2 = document.createElement('h2');
-              var myPara1 = document.createElement('p');
-              var myPara2 = document.createElement('p');
-              var myPara3 = document.createElement('p');
-              var myPara4 = document.createElement('p');
-              
-              myH2.textContent = towns[3].name;
-              myPara1.textContent = towns[3].motto;
-              myPara2.textContent = "Founded: " + towns[3].yearFounded;
-              myPara3.textContent = "Population: " + towns[3].currentPopulation;
-              myPara4.textContent = "Average Rainfall: " + towns[3].averageRainfall;
-              
-              myArticle.appendChild(myH2);
-              myArticle.appendChild(myPara1);
-              myArticle.appendChild(myPara2);
-              myArticle.appendChild(myPara3);
-              myArticle.appendChild(myPara4);
-              
-              section.appendChild(myArticle);
-      }
-      
-  </script>
+  <script src="scripts/hamburger.js">//script for nav icon</script>
+  <script src="scripts/wu-weather-springfield.js">//script for weather conditions</script>
+  <script src="scripts/json-citydata.js">//script for city info</script>
 
 </body>
 <script>

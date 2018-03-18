@@ -9,6 +9,16 @@
     display: block;
 }
     
+div.cityInfo {
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px solid grey;
+}
+    
+section.weathersummary {
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px solid grey;
+}
+    
 .forecastpic img {
     width: 25%;
     position: center;
@@ -32,7 +42,7 @@
     float: right;
 }
     
-    main section.weathersummary {
+    div.weathersummary {
         border-radius: 10px;
         box-shadow: 4px 4px 15px grey;
         width: 100%;
