@@ -1,0 +1,122 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+ section figure.sitelogo {
+    width: 15%;
+} 
+    
+  main section.forecast {
+    display: block;
+}
+    
+div.cityInfo {
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px solid grey;
+}
+    
+section.weathersummary {
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px solid grey;
+}
+    
+.forecastpic img {
+    width: 25%;
+    position: center;
+}
+    
+  table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  table,th,td {
+    border: 1px solid black;
+  }
+  th,td {
+    padding: 15px;
+    text-align: left;
+  }
+    
+  article figure.articlephoto {
+    width: 50%;
+    margin: 0 0 1% 2%;
+    float: right;
+}
+    
+    div.weathersummary {
+        border-radius: 10px;
+        box-shadow: 4px 4px 15px grey;
+        width: 100%;
+    }
+    
+  
+  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+    
+/* gallery page grid */    
+    
+  main section.picturegrid {
+    grid-template-columns: 1fr 1fr;
+}    
+    
+/*storm center page*/
+    
+    input.submitBtn {
+        width: 75%;
+    }
+    
+/* styling for homepage */
+
+div.weatherstoryinfo {
+    display: flex;
+    padding: 0;
+    border: none;
+    margin-bottom: 2%;
+}
+    
+    div.weatherstorytext {
+        width: 50%;
+        border: 1px solid grey;
+        border-radius: 10px;
+        padding: 3%;
+        box-shadow: 4px 4px 15px grey;
+    }
+    
+    div.weatherstoryinfo figure {
+        width: 50%;
+        margin: 0;
+    }
+
+    div.citycontainer {
+        border: none;
+        display: flex;
+        padding: 0;
+        margin-bottom: 2%;
+    }
+
+    .citycontainer figure {
+        margin-top: 2%;
+        width: 50%;
+    }
+
+    .flipped {
+        flex-direction: row-reverse;
+    }
+    
+    .medium {
+        width: 50%;
+        margin: 2%;
+    }
+    
+    .textbox h3 {
+        font-size: 1.5em;
+    }
+    
+    .textbox {
+        padding: 2%;
+        border: 1px solid grey;
+        border-radius: 10px;
+        box-shadow: 4px 4px 15px solid grey;
+        
+    }
+    
+    
+}

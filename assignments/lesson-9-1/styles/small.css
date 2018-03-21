@@ -1,0 +1,323 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+/* from small view to medium view breakpoint at 600px @media only screen and (min-width: 37.5em)
+
+from medium view to large view breakpoint at 1024px @media only screen and (min-width:64em) */
+
+* { box-sizing: border-box; }  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    background-color: #d9d9d9;
+  /* Declare the base font-family - from google font api or other */
+}
+
+
+header, nav, main, footer { 
+    max-width: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+header {
+    background-image: url(banner-clouds-large.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+header figure.bannerpic {
+}
+
+header section.headerbox {
+}
+
+section figure.sitelogo {
+    display: block;
+    float: left;
+    margin: 2%;
+    width: 25%;
+}
+
+section figure.sitelogo img {
+    width: 100%;
+}
+
+header h1 {
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 4em;
+    font-family: 'Bree Serif', serif;
+    margin: 0;
+}
+
+header h2 {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    color: #f5f5f5;
+    font-size: 1.5em;
+}
+
+nav {
+    background-color: #3A5F69;
+    font-family: Verdana, sans-serif;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fcfcfc;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center space-between;
+    align-items: stretch;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #3A5F69;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #ffffff;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+nav ul li.active a {
+    background-color: #ffcc00;
+    color: #000;
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main {
+    margin: 2%;
+}
+main h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #3A5F69;
+}
+
+main figure.franklinpic {
+    width: 100%;
+    margin: 0;
+}
+
+main figure.franklinpic img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+div.cityInfo {
+    border: 1px solid grey;
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 2%;
+}
+
+section.weathersummary {
+    border: 1px solid grey;
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 2%;
+    padding: 3%;
+}
+
+.weathersummary figure {
+    
+    width: 100%;
+}
+
+.weathersummary figure img {
+    width: 20%;
+}
+
+section h3 {
+    font-size: 1.5em;
+    color: #3A5F69;
+    margin-left: 2%;
+}
+
+main section.forecast {
+    display: none;
+}
+
+article {
+    display: block;
+    margin: 5%;
+}
+article h3 {
+    font-size: 1.5rem;
+    color: #3A5F69;
+}
+
+article figure.articlephoto {
+    width: 100%;
+    margin: 0 0 2% 2%;
+    float: right;
+}
+article figure.articlephoto img {
+    width:100%;
+}
+
+article figure.articlephoto figcaption {
+    text-align: center;
+    font-size:.75rem;
+}
+
+footer {
+    background-color: #3A5F69;
+    color: #ffffff;
+    font-size: .9rem;
+    margin: 0;
+    padding: 1%;
+    text-align: center;
+}
+footer aside {
+    margin-left: 2%;
+}
+footer p {
+    margin-left: 2%;
+} /* This structure refers to p elements that are direct children of the footer element */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Other Class Selectors */
+
+/* ----Gallery Page---- */
+
+main section.picturegrid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+}
+
+div figure.gallerypic {
+    margin: 0;
+    width: 100%;
+}
+
+div figure.gallerypic img {
+    width: 100%;
+}
+
+div figure.gallerypic figcaption {
+    text-align: center;
+    font-size:.75em;
+}
+
+
+/* ----Storm Center Page---- */
+
+
+form#conference {
+    margin: 1em 3%;
+}
+
+fieldset {
+    background-color: #487784;
+    border-radius: .8em;
+    margin: 1.5em 0;
+    border: #3a5f69 solid 2px;
+}
+
+legend {
+    color: #f5f5f5;
+    margin-left: 1%;
+    padding: .5em;
+    border: #3a5f69 solid 2px;
+    background-color: #3A5F69;
+    border-radius: .4em;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+label span {
+    display: block;
+    font-size: .8em;
+    color: #f5f5f5;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+input.danger {
+    color: #f5f5f5;
+}
+
+input.submitBtn {
+    -webkit-appearance: none; /* remove the apple mobile default styling */
+    color: #fff;
+    border: solid 1px #111;
+    border-radius: 7px;
+    width: 100%;
+    margin: .5em 0;
+    font-size: 1em;
+    padding: .6em;
+    background-color: #ff1a1a;
+    box-shadow: 4px 4px 10px #666;
+    background-image: linear-gradient(to top, #ff1a1a, #990000);
+}
+
+input.submitBtn:hover {
+    background-image: linear-gradient(to bottom, #ff1a1a, #990000);
+}
+
+/* styling for homepage */
+
+div.weatherstoryinfo {
+    padding: 3%;
+    border: 1px solid grey;
+    margin: 2% 0 2% 0;
+}
+
+main h3 {
+    color: #3A5F69;
+}
+
+.weatherstoryinfo figure {
+    padding: 3%;
+    width: 100%;
+    margin: 0;
+}
+
+.weatherstoryinfo figure img {
+    width: 100%;
+}
+
+div.citycontainer {
+    padding: 3%;
+    border: 1px solid black;
+    margin-bottom: 2%;
+}
+
+.citycontainer figure {
+    width: 100%;
+    margin: 0;
+}
+
+.citycontainer figure img {
+    width: 100%;
+}
+

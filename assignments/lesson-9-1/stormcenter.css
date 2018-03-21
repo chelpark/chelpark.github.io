@@ -1,0 +1,45 @@
+form#conference {
+    margin: 1em 3%;
+}
+
+fieldset {
+    background-color: #e4dccf;
+    border-radius: .8em;
+    margin: 1.5em 0;
+    border: #917a56 solid 1px;
+}
+
+legend {
+    color: #7d2a35;
+    margin-left: 6%;
+    padding: .5em;
+    border: #917a56 solid 1px;
+    background-color: #f2eee7;
+    border-radius: .4em;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+label span {
+    display: block;
+    font-size: .8em;
+    color: #917a56;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+input.submitBtn {
+    -webkit-appearance: none; /* remove the apple mobile default styling */
+    color: #fff;
+    border: solid 1px #111;
+    border-radius: 7px;
+    width: 50%;
+    margin: .5em 0;
+    font-size: 1em;
+    padding: .6em;
+    background: #7d2a35; /* old browsers */
+    box-shadow: 4px 4px 10px #666;
+}
