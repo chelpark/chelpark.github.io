@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke</title>
+  <meta name="author" content="Chelsea Stinger">
+  <meta name="description" content="Mountain Biking supplies, repairs, and tours for Bozeman, Montana">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/small.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+</head>
+<body>
+    
+  <header class="clearfix">
+      <section class="headerbox">
+            <figure class="sitelogo">
+                <img src="images/logo.png" alt="logo">
+            </figure>
+          
+            <h1>The Mountain Spoke</h1>
+            <h2>It's all downhill from here</h2> 
+      </section>
+      
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="mainmenu" id="primaryNav" class="hide">
+    	<li class="active"><a href="index.html">Home</a></li>
+    	<li><a href="franklin.html">Shop</a></li>
+    	<li><a href="greenville.html">Tours</a></li>
+    	<li><a href="springfield.html">Events</a></li>
+    	<li><a href="stormcenter.html">Repairs</a></li>
+    	<li><a href="gallery.html">Contact</a></li>
+    </ul>		
+  </nav>
+    
+  <main class="clearfix">
+    <h2 class="clearfix">The City of Springfield</h2>
+    <figure class="franklinpic">
+        <img src="images/franklin-original.jpg" alt="franklin" sizes="50vw" 
+             srcset="images/franklin-original-small.jpg 200w, 
+                     images/franklin-original-medium.jpg 500w,
+                     images/franklin-original-large.jpg 800w">  
+        
+    </figure>
+      
+    <div class="cityInfo">
+            <article>
+                <p>
+                Motto: <span class="jsonCityInfo" id="sMotto"></span>
+                </p>
+                <p>
+                Year Founded: <span class="jsonCityInfo" id="sFounded"></span>
+                </p>
+                <p>
+                Population: <span class="jsonCityInfo" id="sPop"></span>
+                </p>
+                <p>
+                Annual Rainfall: <span class="jsonCityInfo" id="sRainfall"></span>
+                </p>
+            </article>
+    </div>
+
+    <section class="weathersummary">
+        
+      <h3>Weather Conditions</h3>    
+      <div class="conditions">
+        <p><span id = "conditions">Sunny</span></p>
+        <p>Current Temperature is <span id = "currentTemp">58</span>&deg;</p>
+        <p>Wind Speed is <span id = "windspeed">5</span>mph</p>
+        <p> Current Conditions: <span id="textForecast"><br></span></p>
+        <figure class="conditionPic">
+            <img src="images/sunnyday-small.jpg" alt="current weather" id="weather_icon">
+        </figure>
+      </div>
+        <div id="displayWindchill">
+          <script type="text/javascript" src="scripts/windchill.js">document.getElementById("displayWindchill").innerHTML = findWindchill();</script>
+        </div>
+      
+    </section>
+        
+    <section class="forecast" media="(min-width: 37.5em)">
+      <h3>10 Day Forecast</h3>
+      <table>
+	    <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+      
+    <article class="clearfix">
+      <h3>Never-Ending Rain in Springfield</h3>
+      <figure class="articlephoto">
+          <img src="images/rain.jpeg" alt="article-pic">
+          <figcaption>The City of Springfield</figcaption>
+      </figure>
+      <p class="town-article">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Leo vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Ipsum consequat nisl vel pretium lectus quam id leo. Proin sed libero enim sed faucibus turpis in. Nunc sed id semper risus. Nec ultrices dui sapien eget mi proin sed. Nulla pharetra diam sit amet nisl suscipit adipiscing. Vitae congue eu consequat ac felis donec et. Sit amet nulla facilisi morbi tempus. Sed adipiscing diam donec adipiscing tristique risus nec. Ullamcorper a lacus vestibulum sed arcu non odio. Tristique magna sit amet purus gravida quis blandit. At auctor urna nunc id. Tempor orci eu lobortis elementum nibh tellus molestie nunc. Sit amet porttitor eget dolor morbi non arcu risus quis.
+        <br>
+        Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. At auctor urna nunc id cursus metus aliquam eleifend mi. Rhoncus dolor purus non enim praesent. Ultrices neque ornare aenean euismod elementum nisi quis. Tincidunt nunc pulvinar sapien et. Tincidunt dui ut ornare lectus sit amet est. Feugiat sed lectus vestibulum mattis ullamcorper velit. Varius quam quisque id diam vel quam. Sit amet tellus cras adipiscing enim eu. Ultrices sagittis orci a scelerisque purus.
+      </p>
+    </article>		  
+  
+  </main>
+    
+  <footer class="clearfix">
+    <aside>
+      3950 Valley Commons Drive Bozeman, MT | 222-555-1287
+    </aside>
+    <p> &copy; 2017 All Rights Reserved | The Mountain Spoke |</p>
+    <p id="dateDisplay">
+          <script type="text/javascript" src="scripts/currentdate.js">document.getElementById("dateDisplay").innerHTML = renderDate();</script>
+    </p>
+  </footer>
+  
+  <script src="scripts/hamburger.js">//script for nav icon</script>
+  <script src="scripts/wu-weather-springfield.js">//script for weather conditions</script>
+  <script src="scripts/json-citydata.js">//script for city info</script>
+
+</body>
+<script>
+//remember to add an ID of "mainmenu" to the nav ul
+    var urlString = document.location.href;
+    var urlArray = urlString.split('/');
+    var pageHREF = urlArray[urlArray.length-1];
+    
+    if (pageHREF !=="") {
+        var menu = document.querySelectorAll('ul#mainmenu li a');
+        var i;
+        //loop through all the menu items in the navigation
+        for(i=0; i<menu.length; i++) {
+            var currentURL=(menu[i].getAttribute("href"));
+            menu[i].parentNode.className="";//turn off hilighting by default
+            if (currentURL===pageHREF) {
+                menu[i].parentNode.className="active"; //turn on if a match
+            } //end if
+        } //end of the search for a  match
+    } //end of if !==
+</script>
+</html>

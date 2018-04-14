@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke</title>
+  <meta name="author" content="Chelsea Stinger">
+  <meta name="description" content="Mountain Biking supplies, repairs, and tours for Bozeman, Montana">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/small.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+</head>
+<body>
+    
+  <header class="clearfix">
+      <section class="headerbox">
+            <figure class="sitelogo">
+                <img src="images/logo.png" alt="logo">
+            </figure>
+          
+            <h1>The Mountain Spoke</h1>
+            <h2>It's all downhill from here</h2> 
+      </section>
+      
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="mainmenu" id="primaryNav" class="hide">
+    	<li class="active"><a href="index.html">Home</a></li>
+    	<li><a href="franklin.html">Shop</a></li>
+    	<li><a href="greenville.html">Tours</a></li>
+    	<li><a href="springfield.html">Events</a></li>
+    	<li><a href="stormcenter.html">Repairs</a></li>
+    	<li><a href="gallery.html">Contact</a></li>
+    </ul>		
+  </nav>
+    
+  <main class="clearfix">
+    <h2 class="clearfix">Tours Offered By Us</h2>
+    <figure class="franklinpic">
+        <img src="images/biker-trees.jpg" alt="franklin" sizes="50vw">  
+        
+    </figure>
+      
+    <article class="clearfix">
+      <h3>Beginning Tours</h3>
+      <figure class="articlephoto">
+          <img src="images/biker-trees.jpg">
+      </figure>
+      <p class="town-article">
+        New to mountain biking and wondering where to start?  Come with us on our mountain bike tours for beginners!  We do different trails each week in the Bozeman mountains.  All trails are moderately easy level riding.  Meet us at our storefront at 7am with your mountain bike and gear and we will caravan to the trail of the week!  
+        <br>
+        Beginner tours are led by our expert employee, Teddy Spokes, who will teach you the ins and outs of what to expect along the journey and also throw you some great pointers to improve your skill and style!  Tours are $45.  Payment will be expected at the store before we get started.
+      </p>
+    </article>	
+      
+    <article class="clearfix">
+      <h3>Expert Shredding Tours</h3>
+      <figure class="articlephoto">
+          <img src="images/biker-air.jpg" alt="article-pic">
+      </figure>
+      <p class="town-article">
+        These tours are for the bikers who are looking to take it to the next level! These tours take off every other Saturday starting at the storefront.  Come with all of your essential gear.  These will take place in the trails and bike parks in and around Bozeman.  These trails will have no shortage of ramps, jumps, and tight corners.  Come ready to get dirty!
+        <br>
+        Tours are led by the big boss himself, Jameson Spokes.  We're out to have fun and learn from eachother, but Jameson is full of great tips to get your style on point.  Tours are $60.  Payment will be expected at the store before we get started.
+      </p>
+    </article>		  
+  
+  </main>
+    
+  <footer class="clearfix">
+    <aside>
+      3950 Valley Commons Drive Bozeman, MT | 222-555-1287
+    </aside>
+    <p> &copy; 2017 All Rights Reserved | The Mountain Spoke |</p>
+    <p id="dateDisplay">
+          <script type="text/javascript" src="scripts/currentdate.js">document.getElementById("dateDisplay").innerHTML = renderDate();</script>
+    </p>
+  </footer>
+  
+  <script src="scripts/hamburger.js">//script for small nav icon</script>
+  <script src="scripts/wu-weather-greenville.js">//script for weather conditions</script>
+  <script src="scripts/json-citydata.js">//script for city info</script>
+
+</body>
+<script>
+//remember to add an ID of "mainmenu" to the nav ul
+    var urlString = document.location.href;
+    var urlArray = urlString.split('/');
+    var pageHREF = urlArray[urlArray.length-1];
+    
+    if (pageHREF !=="") {
+        var menu = document.querySelectorAll('ul#mainmenu li a');
+        var i;
+        //loop through all the menu items in the navigation
+        for(i=0; i<menu.length; i++) {
+            var currentURL=(menu[i].getAttribute("href"));
+            menu[i].parentNode.className="";//turn off hilighting by default
+            if (currentURL===pageHREF) {
+                menu[i].parentNode.className="active"; //turn on if a match
+            } //end if
+        } //end of the search for a  match
+    } //end of if !==
+</script>
+</html>
