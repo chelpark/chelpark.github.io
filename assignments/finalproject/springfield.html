@@ -42,96 +42,66 @@
   </nav>
     
   <main class="clearfix">
-    <h2 class="clearfix">The City of Springfield</h2>
+    <h2 class="clearfix">Cycle the Continental Divide</h2>
     <figure class="franklinpic">
-        <img src="images/franklin-original.jpg" alt="franklin" sizes="50vw" 
-             srcset="images/franklin-original-small.jpg 200w, 
-                     images/franklin-original-medium.jpg 500w,
-                     images/franklin-original-large.jpg 800w">  
+        <img src="images/continentaldivide-map.jpg" alt="franklin" sizes="50vw">  
         
     </figure>
       
-    <div class="cityInfo">
-            <article>
-                <p>
-                Motto: <span class="jsonCityInfo" id="sMotto"></span>
-                </p>
-                <p>
-                Year Founded: <span class="jsonCityInfo" id="sFounded"></span>
-                </p>
-                <p>
-                Population: <span class="jsonCityInfo" id="sPop"></span>
-                </p>
-                <p>
-                Annual Rainfall: <span class="jsonCityInfo" id="sRainfall"></span>
-                </p>
-            </article>
-    </div>
-
-    <section class="weathersummary">
-        
-      <h3>Weather Conditions</h3>    
-      <div class="conditions">
-        <p><span id = "conditions">Sunny</span></p>
-        <p>Current Temperature is <span id = "currentTemp">58</span>&deg;</p>
-        <p>Wind Speed is <span id = "windspeed">5</span>mph</p>
-        <p> Current Conditions: <span id="textForecast"><br></span></p>
-        <figure class="conditionPic">
-            <img src="images/sunnyday-small.jpg" alt="current weather" id="weather_icon">
-        </figure>
-      </div>
-        <div id="displayWindchill">
-          <script type="text/javascript" src="scripts/windchill.js">document.getElementById("displayWindchill").innerHTML = findWindchill();</script>
-        </div>
-      
-    </section>
-        
-    <section class="forecast" media="(min-width: 37.5em)">
-      <h3>10 Day Forecast</h3>
-      <table>
-	    <thead>
-          <tr>
-            <th>Day 1</th>
-            <th>Day 2</th>
-            <th>Day 3</th>
-            <th>Day 4</th>
-            <th>Day 5</th>
-            <th>Day 6</th>
-            <th>Day 7</th>
-            <th>Day 8</th>
-            <th>Day 9</th>
-            <th>Day 10</th>
-          </tr>
-		</thead>
-        <tbody>  
-          <tr>
-            <td>89&deg;F</td>
-            <td>87&deg;F</td>
-            <td>78&deg;F</td>
-            <td>75&deg;F</td>
-            <td>72&deg;F</td>
-            <td>72&deg;F</td>
-            <td>79&deg;F</td>
-            <td>83&deg;F</td>
-            <td>85&deg;F</td>
-            <td>89&deg;F</td>
-          </tr>
-		</tbody>
-      </table>
-    </section>
-      
     <article class="clearfix">
-      <h3>Never-Ending Rain in Springfield</h3>
+      <h3>The Adventure of a Lifetime</h3>
       <figure class="articlephoto">
-          <img src="images/rain.jpeg" alt="article-pic">
-          <figcaption>The City of Springfield</figcaption>
+          <img src="images/bike-continentaldivide.JPG" alt="article-pic">
+          <figcaption>All packed up and ready to go</figcaption>
       </figure>
       <p class="town-article">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum enim facilisis gravida neque convallis a cras semper auctor. Leo vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. Ipsum consequat nisl vel pretium lectus quam id leo. Proin sed libero enim sed faucibus turpis in. Nunc sed id semper risus. Nec ultrices dui sapien eget mi proin sed. Nulla pharetra diam sit amet nisl suscipit adipiscing. Vitae congue eu consequat ac felis donec et. Sit amet nulla facilisi morbi tempus. Sed adipiscing diam donec adipiscing tristique risus nec. Ullamcorper a lacus vestibulum sed arcu non odio. Tristique magna sit amet purus gravida quis blandit. At auctor urna nunc id. Tempor orci eu lobortis elementum nibh tellus molestie nunc. Sit amet porttitor eget dolor morbi non arcu risus quis.
-        <br>
-        Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. At auctor urna nunc id cursus metus aliquam eleifend mi. Rhoncus dolor purus non enim praesent. Ultrices neque ornare aenean euismod elementum nisi quis. Tincidunt nunc pulvinar sapien et. Tincidunt dui ut ornare lectus sit amet est. Feugiat sed lectus vestibulum mattis ullamcorper velit. Varius quam quisque id diam vel quam. Sit amet tellus cras adipiscing enim eu. Ultrices sagittis orci a scelerisque purus.
+        Every year in June we take the best trip ever and bike the continental divide!  It's not for the faint of heart! The route begins in Canada in Banff, AB.  However, if you're not too worried about starting from the very beginning, many of us link up in Roosville, MT with the rest of our group about 250 miles into the journey.  The journey ends in Antelope Wells, NM...a mere 2768 miles.
       </p>
-    </article>		  
+        <br>
+        <p>The Details:</p>
+        <ul>
+            <li>June 6th - Start in Banff, AB</li>
+            <li>June 10th - Start in Roosville, MT</li>
+            <li>Fee - $400 paid by April 5th</li>
+            <li>Register below to be put on the list and will email you the pack list and also a suggested training schedule to get you ready for the big day!</li>
+        </ul>
+    </article>	
+      
+    <form action="#" method="post" enctype="multipart/form-data" name="report" id="stormcenter">
+      
+          <fieldset>
+            <legend><span>Personal Information</span></legend>
+          
+            <label><span>Full Name:</span><input name="fullname" type="text" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required></label>
+              
+            <label><span>Date of Birth:</span><input name="date" placeholder="MM/DD/YYYY" type="date"></label>
+              
+        </fieldset>
+        
+        <fieldset>
+            <legend><span>Contact Information</span></legend>
+            <label><span>Email:</span><input name="email" type="email" placeholder="janesmith@gmail.com" required></label>
+              
+            <label><span>Phone:</span><input name="phone" type="tel" placeholder="1234567890" pattern="[0-9]{10-20}" required></label>
+            
+            <label><span>Address:</span><input name="address" type="address" placeholder="1234 Mudslide Lane" required></label>
+            
+            <label><span>City and State:</span><input name="address" type="address" placeholder="Bozeman, MT" required></label>
+              
+            <label><span>Zip Code:</span><input name="zipcode" type="number" placeholder="zipcode" pattern="[0-9]{5}" required></label>
+          
+        </fieldset>
+          
+        <fieldset>
+            <legend><span>Comments</span></legend>
+            <label><span>Questions or Special Accommodations?:</span><textarea rows="4" cols="50" placeholder="Additional Comments"></textarea></label>
+            
+        </fieldset>
+          
+        <input type="button" value="Submit" class="submitBtn" onclick="window.location.href='thanks.html'";>
+
+      
+      </form>
   
   </main>
     
